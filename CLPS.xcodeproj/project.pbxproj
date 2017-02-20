@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34036C591E5965E8007EDA36 /* myClips.clp in Resources */ = {isa = PBXBuildFile; fileRef = 34036C581E5965E8007EDA36 /* myClips.clp */; };
+		341022191E555ACD00BA3B44 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341022181E555ACD00BA3B44 /* CharacterViewController.swift */; };
+		3410B1101E449F4900F6554F /* wine.clp in Resources */ = {isa = PBXBuildFile; fileRef = 3410B10F1E449F4900F6554F /* wine.clp */; };
 		346A5CFC1E448E5C0098AD6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5CFB1E448E5C0098AD6D /* AppDelegate.swift */; };
 		346A5CFE1E448E5C0098AD6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5CFD1E448E5C0098AD6D /* ViewController.swift */; };
 		346A5D011E448E5C0098AD6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A5CFF1E448E5C0098AD6D /* Main.storyboard */; };
@@ -14,6 +17,10 @@
 		346A5D061E448E5C0098AD6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A5D041E448E5C0098AD6D /* LaunchScreen.storyboard */; };
 		346A5D111E448E5C0098AD6D /* CLPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5D101E448E5C0098AD6D /* CLPSTests.swift */; };
 		346A5D1C1E448E5C0098AD6D /* CLPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5D1B1E448E5C0098AD6D /* CLPSUITests.swift */; };
+		346A5D2A1E448E920098AD6D /* CLIPSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346A5D291E448E920098AD6D /* CLIPSiOS.framework */; };
+		346A5D2C1E448EEB0098AD6D /* myClips2.clp in Resources */ = {isa = PBXBuildFile; fileRef = 346A5D2B1E448EEB0098AD6D /* myClips2.clp */; };
+		349AC4931E45B259000BD23E /* NSObject+OCwithCLIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 349AC4921E45B259000BD23E /* NSObject+OCwithCLIPS.m */; };
+		349AC4991E45BC0A000BD23E /* character.m in Sources */ = {isa = PBXBuildFile; fileRef = 349AC4981E45BC0A000BD23E /* character.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34036C581E5965E8007EDA36 /* myClips.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myClips.clp; sourceTree = "<group>"; };
+		341022181E555ACD00BA3B44 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterViewController.swift; path = ../CharacterViewController.swift; sourceTree = "<group>"; };
+		3410B10F1E449F4900F6554F /* wine.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wine.clp; sourceTree = "<group>"; };
 		346A5CF81E448E5C0098AD6D /* CLPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A5CFB1E448E5C0098AD6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346A5CFD1E448E5C0098AD6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,13 @@
 		346A5D171E448E5C0098AD6D /* CLPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A5D1B1E448E5C0098AD6D /* CLPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPSUITests.swift; sourceTree = "<group>"; };
 		346A5D1D1E448E5C0098AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346A5D291E448E920098AD6D /* CLIPSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CLIPSiOS.framework; sourceTree = "<group>"; };
+		346A5D2B1E448EEB0098AD6D /* myClips2.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myClips2.clp; sourceTree = "<group>"; };
+		346A5D2D1E448FA40098AD6D /* Clips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Clips-Bridging-Header.h"; path = "CLPS/Clips-Bridging-Header.h"; sourceTree = "<group>"; };
+		349AC4911E45B259000BD23E /* NSObject+OCwithCLIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OCwithCLIPS.h"; sourceTree = "<group>"; };
+		349AC4921E45B259000BD23E /* NSObject+OCwithCLIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OCwithCLIPS.m"; sourceTree = "<group>"; };
+		349AC4971E45BC0A000BD23E /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character.h; sourceTree = "<group>"; };
+		349AC4981E45BC0A000BD23E /* character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = character.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346A5D2A1E448E920098AD6D /* CLIPSiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +95,7 @@
 		346A5CEF1E448E5C0098AD6D = {
 			isa = PBXGroup;
 			children = (
+				346A5D2D1E448FA40098AD6D /* Clips-Bridging-Header.h */,
 				346A5CFA1E448E5C0098AD6D /* CLPS */,
 				346A5D0F1E448E5C0098AD6D /* CLPSTests */,
 				346A5D1A1E448E5C0098AD6D /* CLPSUITests */,
@@ -97,12 +116,21 @@
 		346A5CFA1E448E5C0098AD6D /* CLPS */ = {
 			isa = PBXGroup;
 			children = (
+				34036C581E5965E8007EDA36 /* myClips.clp */,
+				341022181E555ACD00BA3B44 /* CharacterViewController.swift */,
+				349AC4971E45BC0A000BD23E /* character.h */,
+				349AC4981E45BC0A000BD23E /* character.m */,
+				3410B10F1E449F4900F6554F /* wine.clp */,
+				346A5D291E448E920098AD6D /* CLIPSiOS.framework */,
 				346A5CFB1E448E5C0098AD6D /* AppDelegate.swift */,
 				346A5CFD1E448E5C0098AD6D /* ViewController.swift */,
 				346A5CFF1E448E5C0098AD6D /* Main.storyboard */,
 				346A5D021E448E5C0098AD6D /* Assets.xcassets */,
 				346A5D041E448E5C0098AD6D /* LaunchScreen.storyboard */,
 				346A5D071E448E5C0098AD6D /* Info.plist */,
+				346A5D2B1E448EEB0098AD6D /* myClips2.clp */,
+				349AC4911E45B259000BD23E /* NSObject+OCwithCLIPS.h */,
+				349AC4921E45B259000BD23E /* NSObject+OCwithCLIPS.m */,
 			);
 			path = CLPS;
 			sourceTree = "<group>";
@@ -193,6 +221,7 @@
 				TargetAttributes = {
 					346A5CF71E448E5C0098AD6D = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 459XL42NMF;
 						ProvisioningStyle = Automatic;
 					};
 					346A5D0B1E448E5C0098AD6D = {
@@ -233,6 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				346A5D061E448E5C0098AD6D /* LaunchScreen.storyboard in Resources */,
+				34036C591E5965E8007EDA36 /* myClips.clp in Resources */,
+				346A5D2C1E448EEB0098AD6D /* myClips2.clp in Resources */,
+				3410B1101E449F4900F6554F /* wine.clp in Resources */,
 				346A5D031E448E5C0098AD6D /* Assets.xcassets in Resources */,
 				346A5D011E448E5C0098AD6D /* Main.storyboard in Resources */,
 			);
@@ -259,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349AC4991E45BC0A000BD23E /* character.m in Sources */,
+				341022191E555ACD00BA3B44 /* CharacterViewController.swift in Sources */,
 				346A5CFE1E448E5C0098AD6D /* ViewController.swift in Sources */,
 				346A5CFC1E448E5C0098AD6D /* AppDelegate.swift in Sources */,
+				349AC4931E45B259000BD23E /* NSObject+OCwithCLIPS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +447,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 459XL42NMF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLPS",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CLPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duanhan.CLPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/CLPS/Clips-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +468,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 459XL42NMF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLPS",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CLPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duanhan.CLPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/CLPS/Clips-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +558,7 @@
 				346A5D221E448E5C0098AD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		346A5D231E448E5C0098AD6D /* Build configuration list for PBXNativeTarget "CLPSTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +567,7 @@
 				346A5D251E448E5C0098AD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		346A5D261E448E5C0098AD6D /* Build configuration list for PBXNativeTarget "CLPSUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +576,7 @@
 				346A5D281E448E5C0098AD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
