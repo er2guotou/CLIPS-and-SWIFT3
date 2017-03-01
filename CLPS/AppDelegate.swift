@@ -45,6 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 struct MyGlobal {
-    static var cmd = ""
+    static var characterTest = true
+    
     static var arrayofQuestions:[String] = ["1","2","3","4","5","1","2","3","4","5","1","2","3","4","5","1","2","3","4","5"]
+    
+        static var arrayofQuestions2:[String] = ["1","2","3","4","5"]
+  static var  OC = OCwithCLIPS()
 }

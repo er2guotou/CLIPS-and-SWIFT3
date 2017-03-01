@@ -24,8 +24,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="OOl-Sn-HHX">
                                 <rect key="frame" x="0.0" y="0.0" width="744" height="414"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analysis System of SalesMan's Characters " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ko-hQ-HxU">
-                                <rect key="frame" x="178" y="101" width="270" height="92"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sales Performance Improvement and Training Recommendation System" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ko-hQ-HxU">
+                                <rect key="frame" x="156" y="28" width="303" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.3750854475" blue="0.010069380879999999" alpha="1" colorSpace="calibratedRGB"/>

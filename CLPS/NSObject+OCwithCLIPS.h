@@ -15,4 +15,6 @@
 -(void) test;
 -(void) sendCLIPScommond:(NSString *)cmd;
 -(void) generateFact;
+-(void) reset;
+-(void) generatetrain;
 @end

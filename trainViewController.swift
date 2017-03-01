@@ -10,9 +10,74 @@ import UIKit
 
 class trainViewController: UIViewController {
 
+    @IBOutlet weak var trainImg1: UIImageView!
+    @IBOutlet weak var trainLabel1: UILabel!
+    
+    @IBOutlet weak var trainImg2: UIImageView!
+    @IBOutlet weak var trainLabel2: UILabel!
+    
+    @IBOutlet weak var trainImg3: UIImageView!
+    @IBOutlet weak var trainLabel3: UILabel!
+    
+    @IBOutlet weak var trainImg4: UIImageView!
+     var characterList:[character] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        trainImg1.isHidden = true
+        trainImg2.isHidden = true
+        trainImg3.isHidden = true
+        trainImg4.isHidden = true
+        trainLabel1.isHidden = true
+        trainLabel2.isHidden = true
+        trainLabel3.isHidden = true
+        for cmdStr in MyGlobal.arrayofQuestions2 {
+            MyGlobal.OC?.sendCLIPScommond(cmdStr)
+        }
+
+        MyGlobal.OC?.generatetrain()
+        
+        let  arr : NSMutableArray = (MyGlobal.OC?.characterList)!
+        let num = arr.count
+        print(num)
+        for char in  arr {
+            let cha = char as! character
+            
+           // characterList.append(cha)
+           
+            if(cha.name=="train4")
+            {
+                trainImg1.isHidden = true
+                trainImg2.isHidden = true
+                trainImg3.isHidden = true
+                trainImg4.isHidden = false
+                trainLabel1.isHidden = true
+                trainLabel2.isHidden = true
+                trainLabel3.isHidden = true
+                break
+            }
+            if(cha.name=="train1")
+            {
+                trainImg1.isHidden = false
+                trainLabel1.isHidden = false
+
+            }
+            if(cha.name=="train2")
+            {
+                trainImg2.isHidden = false
+                trainLabel2.isHidden = false
+            }
+            if(cha.name=="train3")
+            {
+                trainImg3.isHidden = false
+                trainLabel3.isHidden = false
+            }
+             print(cha.name)
+            print(cha.certainty)
+        }
+
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +87,12 @@ class trainViewController: UIViewController {
     }
     
 
+    @IBAction func restart(_ sender: UIButton) {
+        MyGlobal.characterTest = true
+        let QRview = (self.storyboard?.instantiateViewController(withIdentifier: "question"))! as UIViewController
+        
+        self.showDetailViewController(QRview, sender: nil)
+    }
     /*
     // MARK: - Navigation
 

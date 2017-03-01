@@ -45,10 +45,25 @@ class ViewController: UIViewController ,UIPickerViewDataSource,UIPickerViewDeleg
         UIPickerAnswer.dataSource = self
         UIPickerAnswer.delegate = self
         
-
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "intro")?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
 
         UILableforQuestion.text = "Q1.What motivates you most at work? "
         UILableforOptions.text = "A.good team culture, teamwork and relationships\n\nB.achievement and winning\n\nC.helping people \n\nD.implement new things  "
+        
+        if(MyGlobal.characterTest)
+        {
+             QNum = 1
+            MyGlobal.OC?.reset()
+        }else{
+            QNum = 22
+        }
         changeQuestion(index: QNum)
     }
     
@@ -71,7 +86,7 @@ class ViewController: UIViewController ,UIPickerViewDataSource,UIPickerViewDeleg
         
         switch index {
         case 1:
-            UILableforQuestion.text = "Q"+String(index)+".Chose one kind of love by instinct from below："
+            UILableforQuestion.text = "Q"+String(index)+".Choose one kind of love by instinct from below："
             ImgA.image = UIImage(named: "love1.png")
             ImgB.image = UIImage(named: "love2.png")
             ImgC.image = UIImage(named: "love3.png")
@@ -244,6 +259,46 @@ class ViewController: UIViewController ,UIPickerViewDataSource,UIPickerViewDeleg
             pickerData = ["A","B","C","D"]
             UIPickerAnswer.reloadComponent(0)
             break
+        case 22:
+            UILableforQuestion.text = "Q"+String(index-1)+".Name of certificate and awarding organisation : ____________（Level of certificate）."
+            UILableforOptions.text = " A) beginner\n\nB) intermediate\n\nC) advanced"
+            
+            UILableforOptions.isHidden = false
+            pickerData = ["A","B","C"]
+            UIPickerAnswer.reloadComponent(0)
+            break
+        case 23:
+            UILableforQuestion.text = "Q"+String(index-1)+".Relevance of the certificate to the position"
+            UILableforOptions.text = " A) Not relevant\n\nB) Partially relevant\n\nC) Highly relevant"
+            
+            UILableforOptions.isHidden = false
+            pickerData = ["A","B","C"]
+            UIPickerAnswer.reloadComponent(0)
+            break
+        case 24:
+            UILableforQuestion.text = "Q"+String(index-1)+".Recency of the certification"
+            UILableforOptions.text = " A) over 5years\n\nB) 3-5years\n\nC) 0-3years"
+            
+            UILableforOptions.isHidden = false
+            pickerData = ["A","B","C"]
+            UIPickerAnswer.reloadComponent(0)
+            break
+        case 25:
+            UILableforQuestion.text = "Q"+String(index-1)+".State the number years of relevant experience"
+            UILableforOptions.text = "A) fresh (0-1years)\n\nB) junior (2-3years)\n\nC) intermediate (4-5years)\n\nD) senior (over 6 years)"
+            
+            UILableforOptions.isHidden = false
+            pickerData = ["A","B","C","D"]
+            UIPickerAnswer.reloadComponent(0)
+            break
+        case 26:
+            UILableforQuestion.text = "Q"+String(index-1)+".Highest level of education attained"
+            UILableforOptions.text = "A) Degree or higher\n\nB) 'A' level/ Poly\n\nC) 'O' level"
+            
+            UILableforOptions.isHidden = false
+            pickerData = ["A","B","C"]
+            UIPickerAnswer.reloadComponent(0)
+            break
         default:
             
             break
@@ -263,27 +318,33 @@ class ViewController: UIViewController ,UIPickerViewDataSource,UIPickerViewDeleg
     
     @IBAction func clickNext(_ sender: UIButton) {
        // print(self.pickAns)
-        let cmd = "(input (questionNum "+String(QNum)+") (inputnum "+String(self.pickAns+1)+"))  "
-        MyGlobal.arrayofQuestions[QNum-1] = cmd
         
         if (QNum < 21) {
+            let cmd = "(input (questionNum "+String(QNum)+") (inputnum "+String(self.pickAns+1)+")(flag 0))  "
+            MyGlobal.arrayofQuestions[QNum-1] = cmd
 
             QNum = QNum+1
             changeQuestion(index: QNum)
         }
-        if QNum>=21 {
-
-            //finish all question
-//            for str in MyGlobal.arrayofQuestions
-//            {
-//                print(str)
-//                MyGlobal.cmd += str
-//            }
-   //         print(MyGlobal.cmd)
+        if QNum==21 {
+            print(MyGlobal.arrayofQuestions)
             let QRview = (self.storyboard?.instantiateViewController(withIdentifier: "analysis"))! as UIViewController
           
             self.showDetailViewController(QRview, sender: nil)
             
+        }
+        if (QNum>21 && QNum<27) {
+            let cmd = "(input (questionNum "+String(QNum-1)+") (inputnum "+String(self.pickAns+1)+"))  "
+            MyGlobal.arrayofQuestions2[QNum-22] = cmd
+            
+            QNum = QNum+1
+            changeQuestion(index: QNum)
+        }
+        if QNum==27 {
+            print(MyGlobal.arrayofQuestions)
+            let QRview = (self.storyboard?.instantiateViewController(withIdentifier: "train"))! as UIViewController
+            
+            self.showDetailViewController(QRview, sender: nil)
         }
     }
     @available(iOS 2.0, *)

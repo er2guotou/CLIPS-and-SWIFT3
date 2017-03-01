@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34036C591E5965E8007EDA36 /* myClips.clp in Resources */ = {isa = PBXBuildFile; fileRef = 34036C581E5965E8007EDA36 /* myClips.clp */; };
+		34036C591E5965E8007EDA36 /* myClips1.clp in Resources */ = {isa = PBXBuildFile; fileRef = 34036C581E5965E8007EDA36 /* myClips1.clp */; };
 		341022191E555ACD00BA3B44 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341022181E555ACD00BA3B44 /* CharacterViewController.swift */; };
 		3410B1101E449F4900F6554F /* wine.clp in Resources */ = {isa = PBXBuildFile; fileRef = 3410B10F1E449F4900F6554F /* wine.clp */; };
+		344277201E6579FE003BC77F /* trainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442771F1E6579FE003BC77F /* trainViewController.swift */; };
 		346A5CFC1E448E5C0098AD6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5CFB1E448E5C0098AD6D /* AppDelegate.swift */; };
 		346A5CFE1E448E5C0098AD6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A5CFD1E448E5C0098AD6D /* ViewController.swift */; };
 		346A5D011E448E5C0098AD6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A5CFF1E448E5C0098AD6D /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		346A5D2C1E448EEB0098AD6D /* myClips2.clp in Resources */ = {isa = PBXBuildFile; fileRef = 346A5D2B1E448EEB0098AD6D /* myClips2.clp */; };
 		349AC4931E45B259000BD23E /* NSObject+OCwithCLIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 349AC4921E45B259000BD23E /* NSObject+OCwithCLIPS.m */; };
 		349AC4991E45BC0A000BD23E /* character.m in Sources */ = {isa = PBXBuildFile; fileRef = 349AC4981E45BC0A000BD23E /* character.m */; };
+		34FF65351E62C99600FF7A29 /* myClips.clp in Resources */ = {isa = PBXBuildFile; fileRef = 34FF65341E62C99600FF7A29 /* myClips.clp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34036C581E5965E8007EDA36 /* myClips.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myClips.clp; sourceTree = "<group>"; };
+		34036C581E5965E8007EDA36 /* myClips1.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myClips1.clp; sourceTree = "<group>"; };
 		341022181E555ACD00BA3B44 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterViewController.swift; path = ../CharacterViewController.swift; sourceTree = "<group>"; };
 		3410B10F1E449F4900F6554F /* wine.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wine.clp; sourceTree = "<group>"; };
+		3442771F1E6579FE003BC77F /* trainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = trainViewController.swift; path = ../trainViewController.swift; sourceTree = "<group>"; };
 		346A5CF81E448E5C0098AD6D /* CLPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A5CFB1E448E5C0098AD6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346A5CFD1E448E5C0098AD6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		349AC4921E45B259000BD23E /* NSObject+OCwithCLIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OCwithCLIPS.m"; sourceTree = "<group>"; };
 		349AC4971E45BC0A000BD23E /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character.h; sourceTree = "<group>"; };
 		349AC4981E45BC0A000BD23E /* character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = character.m; sourceTree = "<group>"; };
+		34FF65341E62C99600FF7A29 /* myClips.clp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myClips.clp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +120,9 @@
 		346A5CFA1E448E5C0098AD6D /* CLPS */ = {
 			isa = PBXGroup;
 			children = (
-				34036C581E5965E8007EDA36 /* myClips.clp */,
+				3442771F1E6579FE003BC77F /* trainViewController.swift */,
+				34FF65341E62C99600FF7A29 /* myClips.clp */,
+				34036C581E5965E8007EDA36 /* myClips1.clp */,
 				341022181E555ACD00BA3B44 /* CharacterViewController.swift */,
 				349AC4971E45BC0A000BD23E /* character.h */,
 				349AC4981E45BC0A000BD23E /* character.m */,
@@ -262,10 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				346A5D061E448E5C0098AD6D /* LaunchScreen.storyboard in Resources */,
-				34036C591E5965E8007EDA36 /* myClips.clp in Resources */,
+				34036C591E5965E8007EDA36 /* myClips1.clp in Resources */,
 				346A5D2C1E448EEB0098AD6D /* myClips2.clp in Resources */,
 				3410B1101E449F4900F6554F /* wine.clp in Resources */,
 				346A5D031E448E5C0098AD6D /* Assets.xcassets in Resources */,
+				34FF65351E62C99600FF7A29 /* myClips.clp in Resources */,
 				346A5D011E448E5C0098AD6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				349AC4991E45BC0A000BD23E /* character.m in Sources */,
+				344277201E6579FE003BC77F /* trainViewController.swift in Sources */,
 				341022191E555ACD00BA3B44 /* CharacterViewController.swift in Sources */,
 				346A5CFE1E448E5C0098AD6D /* ViewController.swift in Sources */,
 				346A5CFC1E448E5C0098AD6D /* AppDelegate.swift in Sources */,
