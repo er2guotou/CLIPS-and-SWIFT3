@@ -17,6 +17,7 @@
 (deffacts answer-input
 ;;example below:
 ;;(input (questionNum 0)(questionDescription "R U lone wolf")(inputnum 1))
+
 )
 
 ;;************************
@@ -116,7 +117,7 @@
 )
 
 (defrule RULE-DECISION-TREE-2-rule24
-(not (input (questionNum 8) (inputnum 1) (flag 1)))
+(or (input (questionNum 8) (inputnum 2) (flag 1))(input (questionNum 8) (inputnum 3) (flag 1)))
 (or (input (questionNum 17) (inputnum 4) (flag 0)) (input (questionNum 17) (inputnum 5) (flag 0)))
 =>(assert (working_characters (name RelationshipBuilders)(certainty 0.16)))
 )
@@ -144,7 +145,7 @@
 (defrule RULE-DECISION-TREE-6-rule28
 (or (input (questionNum 13) (inputnum 3) (flag 0)) (input (questionNum 13) (inputnum 4) (flag 0))
 )
-(not (input (questionNum 18)(inputnum 2)(flag 0))
+(or (input (questionNum 18)(inputnum 1)(flag 0)) (input (questionNum 18)(inputnum 3)(flag 0)) (input (questionNum 18)(inputnum 4)(flag 0))(input (questionNum 18)(inputnum 2)(flag 0))
 )
 =>(assert (working_characters (name HardWorkers)(certainty 0.32)))
 )
@@ -152,7 +153,7 @@
 (defrule RULE-DECISION-TREE-7-rule29
 (or (input (questionNum 7) (inputnum 2) (flag 1)) (input (questionNum 7) (inputnum 3) (flag 0))
 )
-(not (input (questionNum 12)(inputnum 2)(flag 1))
+(or (input (questionNum 12)(inputnum 1)(flag 1)) (input (questionNum 12)(inputnum 3)(flag 1))
 )
 =>(assert (working_characters (name HardWorkers)(certainty 0.39)))
 )
@@ -911,7 +912,6 @@
 )
 )
 )
-
 
 ;;************************
 ;;* export module        *
