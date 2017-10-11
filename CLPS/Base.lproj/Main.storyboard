@@ -290,7 +290,7 @@
                                 <color key="textColor" red="1" green="0.3750854475" blue="0.010069380879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train1" translatesAutoresizingMaskIntoConstraints="NO" id="DDv-hp-fg8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train3" translatesAutoresizingMaskIntoConstraints="NO" id="DDv-hp-fg8">
                                 <rect key="frame" x="110" y="93.5" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="72D-Q7-PwC"/>
@@ -303,7 +303,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train2" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-we-r9a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train1" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-we-r9a">
                                 <rect key="frame" x="110" y="164.5" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4AN-4W-NSV"/>
@@ -326,7 +326,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train3" translatesAutoresizingMaskIntoConstraints="NO" id="FHH-kp-adw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train2" translatesAutoresizingMaskIntoConstraints="NO" id="FHH-kp-adw">
                                 <rect key="frame" x="110" y="235" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="HX2-Xi-d9j"/>
